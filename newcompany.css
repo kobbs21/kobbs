@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.page1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    padding: 0 1rem;
+    background-color: #f1f1f1;
+}
+.brand-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    flex: 1;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 3;
+    gap: 1rem;
+}
+
+.link:hover{
+    opacity: .5;
+    text-transform: capitalize;
+    
+}
+
+.page1 .content{
+    height: 93vh;
+    width: 100%;
+    background: url("images/photo_2021-06-09_04-58-19.jpg")no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: .25rem;
+    position: relative;
+}
+
+.page1 .dim{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.page1 .title{
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 2;
+    color: #FADC26;
+}
+
+.page1 .msg{
+    font-weight: 300;
+    font-size: 1.2rem;
+    z-index: 2;
+    color: #FADC26;
+}
+
+.page1 .content a{
+    background-color: rgb(158, 15, 34);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    z-index: 2;
+}
+
+/* page 2 styles */
+.page2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 15rem;
+}
+
+.page2 .image{
+    width: 25rem;
+    aspect-ratio: 1/1;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid #f1f1f1;
+}
+
+.page2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.page2 .content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.page2 .content .title{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.page2 .content .msg{
+    letter-spacing: .05rem;
+}
+/* page 3 styles*/
+.page3{
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.page3>.title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.page3>.msg{
+    color: gray;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+}
+.page3 .services-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.page3 .services-cont .service{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    width: calc((100% - 3rem) / 4);
+    overflow: hidden;
+    height: 10rem;
+    box-shadow: .2rem .2rem .3rem .1rem gray;
+}
+.page3 .services-cont .service .image{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0.25rem 0 0 .25rem;
+}    
+.page3 .services-cont .service .image img{
+    width:100%;
+    height: 100%;
+    border-radius: 0.25rem 0 0 .25rem;
+}    

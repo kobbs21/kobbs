@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="author" content="Kobby Mensah" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <title>Bill Evaluation</title>
+
+<style type="text/css">
+body{background-color: burlywood;}
+form{padding: 10px; background-color:rgb(243, 223, 223) ; 
+border: 2px solid rgb(145, 1, 1); border-radius: 7px;}
+
+form div{padding: 4px;
+   margin: 0 0 1px 0;     
+}
+table{width: 100%; height: auto;}
+.large{width: 325px;}
+.txt-format {border-radius: 5px; width: 100px;background-color: rgb(189, 230, 247); color: rgb(8, 8, 8);}
+.bill-container{margin: auto; width: 450px;}
+.center-tb tr td{
+    text-align: center;
+    padding: 0;
+}
+.td-right{
+    text-align: right;
+}
+
+.btn{border-radius: 10px; color: rgb(241, 243, 243); padding: 5%; width: fit-content; background-color: orange;}
+.body-text h1{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.body-text h3{font-style: inherit ; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+input{
+    border: 2px solid black;
+}
+</style>
+
+
+</head>
+    <body>
+
+        <div align="center" class="body-text">
+            <h1>KOBBS CROMPTON LIMITED.</h1>
+            <h3>Bill Evaluation</h3>
+        </div>    
+
+    <div class="bill-container">
+        <form name="BillEvaluation" method="post">
+            <td><b>Our Services</b></td><br>
+            <table>
+                <tr>
+                    <td class="large bold">Desktop Development:</td>
+                    <td><input type="number" id="desktopDevelopment" class="txt-format" /></td>
+                </tr>
+                <tr>
+                    <td class="bold">Mobile Development:</td>
+                    <td><input type="number" id="mobileDevelopment" class="txt-format" /></td>
+                </tr>
+                <tr>
+                    <td class="bold">Other Packages:</td>
+                    <td><input type="number" id="otherPackages" class="txt-format" /></td>
+                </tr>
+            </table>
+            <table class="center-tb">
+                <tr>
+                        <td><input type="button" name="btnCalculate" value="Evaluate" class="btn" onclick="getStaff()"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td colspan="2"><hr /></td>
+               </tr>
+                <tr>
+                    <td class="bold">Payment Amount:</td>
+                    <td class="td-right"><input type="text" name="evaluate" class="txt-format" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>  
+
+        <script type="text/javascript">
+            function getStaff() {
+                var dDevelopment= parseFloat(document.BillEvaluation.desktopDevelopment.value);
+                var mDevelopment= parseFloat(document.BillEvaluation.mobileDevelopment.value);
+                var oPackages= parseFloat(document.BillEvaluation.otherPackages.value);
+                var pamount= dDevelopment + mDevelopment + oPackages;
+
+
+                document.BillEvaluation.evaluate.value =  pamount;
+            }      
+           
+
+
+        </script>
+ <footer>
+    <div><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <picture>
+            <source media="(b
+            )" srcset="">
+            <img src="" alt="">
+        </picture>
+        <p style="text-align: center;"> <b>Kobbs Crompton &copy; 2021 | All Rights Reserved.</b> </p>
+    </div>
+</footer>
+
+
+    </body>
+   
+    
+    </html>        
